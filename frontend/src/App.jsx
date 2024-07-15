@@ -15,7 +15,6 @@ const App = () => {
         <Route path="/books/edit/:id" element={<EditBook />} />
         <Route path="/books/delete/:id" element={<DeleteBook />} />
       </Routes>
-      <p>App</p>
     </div>
   );
 };
