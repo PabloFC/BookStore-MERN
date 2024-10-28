@@ -10,12 +10,15 @@ const app = express();
 app.use(express.json());
 
 //Middleware para CORS
+//Option 1: Allow all origins with default of cors
 app.use(cors());
+
+//Option 2: Allow Custom origins
 // app.use(
 //   cors({
 //     origin: "http://localhost:3000",
 //     methods: ["GET", "POST", "PUT", "DELETE"],
-//     allowedHeaders: ["Content-Type", "Authorization"],
+//     allowedHeaders: ["Content-Type"],
 //   })
 // );
 

@@ -15,7 +15,7 @@ const Home = () => {
       .get("http://localhost:5555/books")
       .then((response) => {
         console.log("API response:", response);
-        setBooks(response.data.books);
+        setBooks(response.data.data);
         setLoading(false);
       })
       .catch((error) => {
